@@ -8,7 +8,9 @@ import "./Service.css"
 const Service = () => {
     return (
         <section className='service'>
-            <h1 className='service_page_header_text'>УСЛУГИ</h1>
+            <h1 className='service_page_header_text'
+                id='service'
+            >УСЛУГИ</h1>
             <div className="service_page">
                 <div className="container">
                     <div className="service_page-container">

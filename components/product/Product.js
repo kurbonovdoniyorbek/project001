@@ -18,7 +18,7 @@ const Product = () => {
         <section className='product_page'>
             <div className='container'>
                 <div className="product_container">
-                    <h3>ПРОДУКЦИЯ</h3>
+                    <h3 id='product'>ПРОДУКЦИЯ</h3>
                     <div className="product_container-collection">
                         <div className="product_page-box">
                             <Image src={picture1} alt="" />

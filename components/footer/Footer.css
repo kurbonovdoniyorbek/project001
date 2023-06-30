@@ -63,8 +63,8 @@
     color: #fff;
     border-radius: 130px;
     cursor: pointer;
-    background: rgb(13, 76, 147);
-    background: linear-gradient(131deg, rgba(13, 76, 147, 1) 14%, rgba(0, 201, 201, 1) 89%);
+    background: var(--bg-blue);
+    background: var(--bg-blue-lg);
     font-size: 18px;
 }
 

@@ -5,6 +5,7 @@ import { HiMenuAlt3 } from 'react-icons/hi'
 import { RxCross2 } from 'react-icons/rx'
 import Image from 'next/image'
 import { BsGlobe } from 'react-icons/bs'
+import { Link } from 'react-scroll'
 
 const Navbar = () => {
     const [navActive, setNavActive] = useState(false)
@@ -13,22 +14,41 @@ const Navbar = () => {
             <div className={`navbar ${navActive ? "nav_active" : ""}`}>
                 <ul className='nav_container-links'>
                     <li className="nav_container-links-item">
-                        МАГАЗИН
+                        <Link to='magazine'
+                            onClick={() => setNavActive(false)}
+                        >
+                            МАГАЗИН
+                        </Link>
                     </li>
                     <li className="nav_container-links-item">
-                        О КОМПАНИИ
+                        <Link to='about'
+                            onClick={() => setNavActive(false)}>
+                            О КОМПАНИИ
+                        </Link>
                     </li>
                     <li className="nav_container-links-item">
-                        ПРОДУКЦИЯ
+                        <Link to='product'
+                            onClick={() => setNavActive(false)}>
+                            ПРОДУКЦИЯ
+                        </Link>
                     </li>
                     <li className="nav_container-links-item">
-                        УСЛУГИ
+                        <Link to='service'
+                            onClick={() => setNavActive(false)}>
+                            УСЛУГИ
+                        </Link>
                     </li>
                     <li className="nav_container-links-item">
-                        АКЦИИ И НОВОСТИ
+                        <Link to='news'
+                            onClick={() => setNavActive(false)}>
+                            АКЦИИ И НОВОСТИ
+                        </Link>
                     </li>
                     <li className="nav_container-links-item">
-                        ОБРАТНАЯ СВЯЗЬ
+                        <Link
+                            onClick={() => setNavActive(false)}>
+                            ОБРАТНАЯ СВЯЗЬ
+                        </Link>
                     </li>
                 </ul>
                 <div className="navbar_close"

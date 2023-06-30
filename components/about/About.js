@@ -8,7 +8,7 @@ const About = () => {
         <section className='about'>
             <div className='container'>
                 <div className="about_page">
-                    <h1>О КОМПАНИИ</h1>
+                    <h1 id='about'>О КОМПАНИИ</h1>
                     <div className="about_page_container">
                         <div className="about_page_img">
                             <Image src={image} />

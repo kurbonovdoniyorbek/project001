@@ -1,12 +1,7 @@
-"use client"
 import Image from 'next/image'
 import React from 'react'
-import { Swiper, SwiperSlide } from "swiper/react";
-import { Grid, Pagination } from "swiper";
 import './Partners.css'
-import "swiper/css";
-import "swiper/css/grid";
-import "swiper/css/pagination";
+import { FaChevronRight, FaChevronLeft } from 'react-icons/fa6'
 import image1 from '../../public/assets/partners/1.png'
 import image2 from '../../public/assets/partners/2.png'
 import image3 from '../../public/assets/partners/3.png'
@@ -24,24 +19,7 @@ const Partners = () => {
             <div className="container">
                 <div className="partners_page">
                     <h1>ПАРТНЕРЫ</h1>
-                    <Swiper
-                        slidesPerView={3}
-                        grid={{
-                            rows: 3,
-                        }}
-                        spaceBetween={10}
-                        pagination={{
-                            clickable: true,
-                        }}
-                        modules={[Grid, Pagination]}
-                        className="mySwiper"
-                    >
-                        <SwiperSlide>
-                            <Image src={image1} />
-                        </SwiperSlide>
-
-                    </Swiper>
-                    {/* <div className="partners_page_container">
+                    <div className="partners_page_container">
                         <div className="partners_page_box">
                             <Image src={image1} />
                         </div>
@@ -68,7 +46,7 @@ const Partners = () => {
                         <div className="partner_page-left">
                             <FaChevronLeft />
                         </div>
-                    </div> */}
+                    </div>
 
                 </div>
             </div>

@@ -16,7 +16,7 @@ const News = () => {
         <section className='news'>
             <div className="container">
                 <div className="news_page">
-                    <h1>НОВОСТИ</h1>
+                    <h1 id='news'>НОВОСТИ</h1>
                     <Swiper
                         slidesPerView={3}
                         spaceBetween={5}

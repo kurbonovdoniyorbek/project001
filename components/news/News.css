@@ -39,8 +39,8 @@
     border-radius: 35px;
     font-size: 20px;
     position: absolute;
-    background: rgb(13, 76, 147);
-    background: linear-gradient(131deg, rgba(13, 76, 147, 1) 14%, rgba(0, 201, 201, 1) 89%);
+    background: var(--bg-blue);
+    background: var(--bg-blue-lg);
     cursor: pointer;
     bottom: -30px;
     left: 40px;
@@ -49,8 +49,8 @@
 .news_page-right {
     width: 50px;
     height: 50px;
-    background: rgb(13, 76, 147);
-    background: linear-gradient(131deg, rgba(13, 76, 147, 1) 14%, rgba(0, 201, 201, 1) 89%);
+    background: var(--bg-blue);
+    background: var(--bg-blue-lg);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -64,8 +64,8 @@
 .news_page-left {
     width: 50px;
     height: 50px;
-    background: rgb(13, 76, 147);
-    background: linear-gradient(131deg, rgba(13, 76, 147, 1) 14%, rgba(0, 201, 201, 1) 89%);
+    background: var(--bg-blue);
+    background: var(--bg-blue-lg);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -137,8 +137,8 @@
 
 .news_page .swiper-slide {
     height: auto;
-    background: rgb(248, 248, 248);
-    background: linear-gradient(360deg, rgba(248, 248, 248, 0.439) 0%, rgba(248, 248, 248, 1) 100%);
+    background: var(--bg-white);
+    background: var(--bg-white-lg);
     border-radius: 35px;
     display: flex;
     flex-direction: column;
