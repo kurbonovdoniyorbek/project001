@@ -78,3 +78,28 @@
 .header_page-btn_container button img {
     border-radius: 50%;
 }
+
+@media screen and (max-width:1350px) {
+    .header_page-collection {
+        width: 40%;
+        display: flex;
+        white-space: nowrap;
+        font-size: 13px;
+    }
+
+    .header_page-collection-item {
+        width: 45%;
+        height: 50px;
+        background-color: transparent;
+        list-style-type: none;
+        display: flex;
+        align-items: center;
+        gap: 20px;
+    }
+}
+
+@media screen and (max-width:1200px) {
+    .header_page {
+        display: none;
+    }
+}

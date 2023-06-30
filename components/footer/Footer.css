@@ -122,7 +122,7 @@
     height: auto;
     background-color: transparent;
     display: flex;
-    gap: 50px;
+    justify-content: space-between;
 }
 
 
@@ -162,6 +162,7 @@
     align-items: center;
     justify-content: space-between;
     display: flex;
+    white-space: nowrap;
 }
 
 .footer_page-links p {
@@ -173,4 +174,99 @@
 
 .footer_page-links p span {
     color: #00C9C9;
+}
+
+@media screen and (max-width:1200px) {
+    .footer_page_container {
+        flex-direction: column-reverse;
+    }
+
+    .footer_page-right {
+        width: 100%;
+        height: auto;
+        justify-content: space-around;
+    }
+
+    .footer_page-left {
+        width: 100%;
+        height: auto;
+        background-color: transparent;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        gap: 20px;
+    }
+
+    .footer_page-left-top {
+        justify-content: space-around;
+    }
+
+    .footer_page-left-container {
+        grid-column-gap: 20px;
+        grid-row-gap: 20px;
+    }
+
+    .footer_page-left-bottom {
+        width: 100%;
+        height: 55%;
+        gap: 60px;
+    }
+
+    .footer_page-links p {
+        font-size: 16px;
+        font-weight: 370;
+        color: #353535;
+    }
+}
+
+@media screen and (max-width:650px) {
+    .footer_page-right {
+        width: 100%;
+        height: auto;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+
+    }
+
+    .first_footer_page {
+        align-items: center;
+    }
+
+    .first_footer_container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        list-style-type: none;
+        font-size: 16px;
+        font-weight: 360;
+        color: #595959;
+        transition: .3s;
+        gap: 10px;
+    }
+
+    .footer_page-left-container {
+        width: 100%;
+        background-color: transparent;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer_page-left-top {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer_page-left-bottom {
+        flex-direction: column;
+        padding-bottom: 70px;
+    }
+
+    .footer_page-links p {
+        font-size: 8px;
+        font-weight: 370;
+        color: #353535;
+    }
 }

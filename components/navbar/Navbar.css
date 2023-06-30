@@ -44,3 +44,115 @@
     border-bottom-right-radius: 150px;
     border: none;
 }
+
+.tell_number_navbar {
+    display: none;
+}
+
+.navbar_catalogue {
+    display: none;
+}
+
+.navbar_close {
+    display: none;
+}
+
+.navbar_collections {
+    display: none;
+}
+
+@media screen and (max-width:1200px) {
+    .navbar {
+        display: flex;
+        flex-direction: column;
+        width: 300px;
+        height: 100vh;
+        background-color: #fff;
+        position: fixed;
+        right: -300px;
+        top: 0;
+        z-index: 10;
+        transition: all .5s ease;
+    }
+
+    .navbar.nav_active {
+        top: 0;
+        right: 0;
+        transition: all .5s ease;
+    }
+
+    .nav_container-links {
+        border-radius: 0;
+        flex-direction: column;
+    }
+
+    .nav_container-links-item {
+        width: 100%;
+        padding: 10px;
+        background-color: #fff;
+        display: flex;
+        white-space: wrap;
+        border-right: none;
+        font-size: 17px;
+        color: #0D4C93;
+        cursor: pointer;
+        transition: all .3s ease;
+    }
+
+    .tell_number_navbar {
+        display: block;
+        color: #0D4C93;
+        font-size: 17px;
+    }
+
+    .navbar_catalogue {
+        font-size: 30px;
+        display: block;
+    }
+
+    .navbar_close {
+        position: absolute;
+        top: 10px;
+        right: 260px;
+        z-index: 11;
+        font-size: 25px;
+        width: 30px;
+        height: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .navbar_collections {
+        width: 100%;
+        height: auto;
+        display: flex;
+        align-items: center;
+        position: relative;
+        gap: 30px;
+    }
+
+    .navbar_collection_image {
+        flex: 1;
+    }
+
+    .navbar_logo {
+        width: 30px;
+        height: 30px;
+    }
+
+    .navbar_lang {
+        font-size: 28px;
+        border-radius: 50%;
+        border: 1px solid #dbdbdb;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .navbar_collection_image img {
+        width: 70%;
+    }
+}

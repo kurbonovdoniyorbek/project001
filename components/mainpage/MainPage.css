@@ -96,3 +96,67 @@
 .main_page_swiper_round.active {
     background-color: #00C9C9;
 }
+
+@media screen and (max-width:1200px) {
+    .main_page {
+        height: auto;
+        padding-bottom: 50px;
+    }
+
+    .main_page_container {
+        width: 100%;
+        height: auto;
+        background-color: transparent;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+
+    .main_page-right-background {
+        width: 100%;
+        height: auto;
+    }
+
+    .main_page_right {
+        width: 60%;
+    }
+
+    .main_page-right-background {
+        background-size: 70%;
+    }
+
+    .main_page_left {
+        width: 100%;
+        align-items: center;
+    }
+
+    .main_page_swiper {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        padding-top: 30px;
+    }
+
+}
+
+@media screen and (max-width:600px) {
+    .main_page_left h6 {
+        font-size: 40px;
+    }
+
+    .main_page_left button {
+        width: 200px;
+        height: 50px;
+        font-size: 20px;
+        background: rgb(13, 76, 147);
+        background: linear-gradient(131deg, rgba(13, 76, 147, 1) 14%, rgba(0, 201, 201, 1) 89%);
+        border: none;
+        outline: none;
+        color: #fff;
+        border-radius: 35px;
+    }
+}
